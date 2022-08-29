@@ -500,3 +500,12 @@ button#doks-versions {
   z-index: -1;
 }
 
+/*---------------------- Media query ---------------------*/
+/* for larger than 650px screen */
+
+@media(max-width: 650px){
+  .hero-bg-bottom{
+    display: none;
+  }
+}
+
