@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://nimble-scone-d5b5a0.netlify.app/'
 languageCode = 'en-us'
 title = 'Programador Elegante'
 
