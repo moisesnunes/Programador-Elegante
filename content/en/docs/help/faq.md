@@ -1,7 +1,7 @@
 ---
-title: "FAQ"
-description: "Answers to frequently asked questions."
-lead: "Answers to frequently asked questions."
+title: "Contato"
+description: ""
+lead: ""
 date: 2020-10-06T08:49:31+00:00
 lastmod: 2020-10-06T08:49:31+00:00
 draft: false
@@ -13,38 +13,28 @@ weight: 630
 toc: true
 ---
 
-## Hyas?
+## Sobre este website
 
-Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
+Nosso principal foco aqui é a criação de tutoriais e traduções tirados dos livros para a criação de conhecimento especifico.
 
-## Footer notice?
+## Importante
 
-Please keep it in place.
+O website está em constante atualização e o conteúdo está sendo criado aos poucos; portanto, algumas páginas não estão finalizadas e algums titulos vazios.
 
-## Keyboard shortcuts for search?
+## Quem sou eu?
 
-- focus: `Ctrl + /`
-- select: `↓` and `↑`
-- open: `Enter`
-- close: `Esc`
+Sou Moises Nunes, criador de conteúdo.
 
-## Other documentation?
+## Cantato 
 
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
+meu e-mail: moisesnunes10086@gmail.com
 
-## Can I get support?
+## Ajuda 
 
-Create a topic:
+Cada artigo, post, tradução deste website leva horas, dias ou semanas para ser feito.
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+A sua contribuição é mais que bem vinda:
 
-## Contact the creator?
 
-Send `h-enk` a message:
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+ 

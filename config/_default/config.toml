@@ -1,5 +1,5 @@
 baseurl = "https://nimble-scone-d5b5a0.netlify.app/"
-canonifyURLs = false
+canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
