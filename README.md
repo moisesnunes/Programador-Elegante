@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nimble-scone-d5b5a0.netlify.app/">
-    <img alt="Doks" url="https://nimble-scone-d5b5a0.netlify.app/" width="60">
+    <img alt="Programador Elegante" url="https://nimble-scone-d5b5a0.netlify.app/" width="60">
   </a>
 </p>
 

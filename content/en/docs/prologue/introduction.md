@@ -15,16 +15,22 @@ toc: true
 
 ### Tutoriais
 
-Tutoriais de html: [HTML →]({{< relref "html" >}})
+![html](./html-5.png)  __Tutoriais de html__: [HTML →]({{< relref "html" >}}) 
+___
 
-Tutoriais de JavaScript: [JavaScript →]({{< relref "javascript" >}})
+![css](./css-3.png)  __Tutoriais de CSS__: [CSS →]({{< relref "css" >}})
+___
 
-Tutoriais de CSS: [CSS →]({{< relref "css" >}})
+![js](./js.png)  __Tutoriais de JavaScript__: [JavaScript →]({{< relref "javascript" >}})
+___
+
+ ![c++](./c.png)  __Tutoriais de C++__: [C++ →]({{< relref "C++" >}}) 
+___
 
 ### Traduções 
 
-Traduções de diversos livros capítulos sobre programação. [Traduções →]({{< relref "traduções" >}})
+![Traduções](./translate.png)  Traduções de diversos livros capítulos sobre programação. [Traduções →]({{< relref "traduções" >}})
 
 ### Blog 
 
-Acesse nosso blog. [Blog →]({{< relref "blog" >}})
+![Blog](./blog.png) Acesse nosso blog. [Blog →]({{< relref "blog" >}})
