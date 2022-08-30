@@ -31,6 +31,12 @@ pre code {
   padding: 1.5rem !important;
 }
 
+@media(max-width:990px){
+  pre code{
+    margin: 0;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   pre,
   code,

@@ -1,5 +1,5 @@
 ---
-title: "Programas C: Básico"
+title: "Programas em C: Básico"
 description: "Todos os programas em C: Básico"
 excerpt: "Todos os programas em C: Básico"
 date: 2022-08-15T03:18:46-03:00
