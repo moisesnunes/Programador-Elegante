@@ -9,6 +9,8 @@ images: []
 weight: 500
 ---
 
+____
+
 [1. Introdução ao C++ →]({{< relref "introduction-to-c++" >}})
 
 __Descrição rápida__: Before getting into the details of C++ language, this chapter presents, in brief, its history, evolution, and strengths. Then, we’ll discuss some basic concepts that we’ll need in order to write our first program.

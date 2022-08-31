@@ -10,6 +10,18 @@
   identifier = "help"
   url = "/docs/help/"
 
+[[docs]]
+  name = "C++"
+  weight = 70
+  identifier = "c++"
+  url = "docs/C++"
+
+[[docs]]
+  name = "html"
+  weight = 70
+  identifier = "html"
+  url = "docs/html"
+
 [[main]]
   name = "Docs"
   url = "/docs/prologue/introduction/"
