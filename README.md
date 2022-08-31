@@ -12,4 +12,7 @@
   Documentação completa de livros, tutoriais e traduções.
 </p>
 
+<p align="center">
+  Este website está em construção e os conteúdos estão sendo adcionados aos poucos
+</p>
 
