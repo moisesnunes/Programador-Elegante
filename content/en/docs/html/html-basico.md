@@ -1,5 +1,5 @@
 ---
-title: "Básico"
+title: "HTML Básico"
 description: "Introdução ao HTML básico"
 lead: "Introdução ao HTML básico"
 date: 2022-08-22T00:05:15-03:00

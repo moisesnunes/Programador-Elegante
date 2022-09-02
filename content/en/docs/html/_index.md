@@ -11,7 +11,7 @@ toc: true
 ---
 ____
 
-## HTML Básico 
+## HTML Básico ![](./html(2).png)
 
 [1. Introdução ao __*HTML*__ → ]({{< relref "introducao.md" >}})
 
@@ -79,9 +79,45 @@ ___
 
 *______*
 
-## HTML Avançado
+## HTML Avançado ![](./html(2).png)
 
+---
 
+[1. Doctypes no __*HTML*__ → ]({{< relref "doctypes" >}})
+
+{{< alert icon="💡" text="Doctype é a declaração para o web browser do tipo de documento que a página web está escrita." />}}
+___
+
+[2. Layout no __*HTML*__ → ]({{< relref "layout" >}})
+
+{{< alert icon="💡" text="Com o layout podemos colocar os elementos de maneira bem estruturada e consequentemente mudar o website." />}}
+___
+
+[3. Head no __*HTML*__ → ]({{< relref "head" >}})
+
+{{< alert icon="💡" text="O head tem como principal função adcionar mais dados nos documentos, como também a posição no html em que fazemos referencias a recursos especificos." />}}
+___
+
+[4. Meta no __*HTML*__ → ]({{< relref "meta" >}})
+
+{{< alert icon="💡" text="A tag meta é usualmenta usada para prover dados de estrutura como descrição, autor, keywords." />}}
+___
+
+[5. Scripts no __*HTML*__ → ]({{< relref "scripts" >}})
+
+{{< alert icon="💡" text="clients-side script refere-se ao programa que o web-browser do usuario executa. Usamos o script para fazer referencia ao javascript a linguagem client-side script mais usada." />}}
+___
+
+[6. Entities no __*HTML*__ → ]({{< relref "entities" >}})
+
+{{< alert icon="💡" text="Alguns simbolos são reservados no html é não podeos usá-los." />}}
+___
+
+[7. Url no __*HTML*__ → ]({{< relref "url" >}})
+
+{{< alert icon="💡" text="Url siginifica Uniform Resource Locator ou seja é o endereço das páginas na world wide web." />}}
+
+*_____*
 
 
 
