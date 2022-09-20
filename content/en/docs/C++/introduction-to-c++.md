@@ -21,5 +21,47 @@ C++ originally derives from C, which was developed at Bell Labs in the early 197
 
 The design and development of C++ began at Bell Labs in the early 1980s by Bjarne Stroustrup as an extension of the C language. Stroustrup had several reasons to base C++ on C, such as C’s brevity, high performance, portability, and widespread popularity. In fact, the name C++ comes from the C increment operator ++, which increments the value of a variable by one. According to Stroustrup, the name signifies the evolutionary nature of the changes from C.
 
+## Nosso primeiro programa em C++
+
+___
+
+Nosso primeiro programa será uma versão "rock" do programa que a maioria dos programadores começam. Ao invés da clássica mensagem *hello world*, nosso primeiro programa exibe na tela o clássico som dos *Ramones*: *Hey Ho, Let's Go*.  
+
+```c++
+#include<iostream>
+int main()
+{
+  std::cout << "Hey Ho, Let's Go\n";
+  return 0;
+}
+```
+
+Antes de explicarmos as linhas do programa, vamos discutir brevemente a biblioteca padrão.
+
+### Biblioteca Padrão
+
+A palavra *biblioteca* refere-se a uma coleção de recursos de software (por exemplo, funções), geralmente escritos por outros, que podemos usar em nossos programas. A biblioteca padrão ocupa grande parte do C++ standard e fornece uma grande coleção de componentes que facilitam o trabalho do programador. Por exemplo, a classe *string* é um desses componentes e torna mais fácil para o programador gerencia-lás. Todo compilador C++ deve suportar a biblioteca padrão.
+
+A biblioteca padrão é definida em um namespace separado, que se chama *std*. Falaremos sobre namespaces em breve. Os serviços da biblioteca padrão (por exemplo, exibir dados na tela) são fornecidos por meio de arquivos especiais, esses arquivos são normalmente chamados de arquivos de cabeçalho (*header files*) e são fornecidos com o compilador. Um deles é o *iostream*; Como dissemos, a biblioteca C++ inclui a biblioteca C, para cada arquivo de cabeçalho *X.h* da biblioteca C existe o cabeçalho *cX* correspondente na biblioteca C++. A letra c indica que o arquivo de cabeçalho faz parte da biblioteca C. Por exemplo, o arquivo correspondente de *stdio.h* é o arquivo *cstdio*. Embora seu conteúdo possa ser o mesmo, o formato *cX* é mais adequado para programas C++. Em particular, a inclusão do arquivo *cX* coloca os nomes definidos neste arquivo no namespace *std*. Observe que você pode ler programas que incluem o arquivo *iostream.h* em vez de *iostream. iostream.h* que é uma versão mais antiga do *iostream* e não é mais compatível com o padrão C++.
+
+### A Diretiva #include
+
+C++ usa um programa de software chamado pré-processador. O pré-processador normalmente faz parte do compilador e sua função é processar o programa antes de ser compilado. O pré-processador comunica-se com o compilador por meio de diretivas. Uma diretiva de pré-processador instrui o compilador a agir de acordo. Por exemplo, com a diretiva __#include__, o pré-processador instrui o compilador a incluir o conteúdo do arquivo *iostream* no programa antes de ser compilado. Com relação à sintaxe, as diretivas sempre começam com o caractere # e não terminam com ponto e vírgula (;) ou algum outro marcador especial. Veremos mais diretivas de pré-processador no Capítulo 15.
+
+O arquivo *iostream* onde a letra __i__ corresponde ao *input* e __o__ ao *output*, contém informações sobre classes e funções necessárias para ler e exibir dados. Se não incluirmos este arquivo, o compilador não reconhecerá o *cout* e a compilação falhará. Para incluir um arquivo da biblioteca padrão  como *iostream*, colocamos o nome do arquivo entre colchetes <>. Um arquivo incluído também pode conter diretivas __#include__ e incluir outros arquivos. Em geral, quando estamos usando componentes da biblioteca padrão em nosso programa, devemos incluir os arquivos de cabeçalho correspondentes. Por exemplo, se estivermos usando a classe *string*, precisamos incluir o arquivo *string*. A ordem em que os arquivos são incluídos não importa; A prática comum é colocar as diretivas __#include__ no início do arquivo.
+
+Quando você se familiarizar com o C++, você pode editar seus próprios arquivos de cabeçalho e incluí-los em seus programas. Para incluir seu próprio arquivo de cabeçalho, coloque seu nome entre aspas duplas ("").
+
+Quando o programa é compilado, o compilador procura os arquivos incluídos. As regras de busca dependem da implementação. Normalmente, se o nome do arquivo estiver entre <>, o compilador pesquisa em diretórios predefinidos que contêm os cabeçalhos da biblioteca padrão. Se estiver entre aspas duplas (""), o compilador geralmente começa com o diretório que contém o arquivo de origem e, em seguida, pesquisa os diretórios predefinidos. Se o arquivo não for encontrado, o compilador produzirá uma mensagem de erro e a compilação falhará. O nome do arquivo pode incluir informações relativas ou completas do caminho. Por exemplo:
+
+```c++
+#include "d:\projects\serial.h" // DOS/Windows path.
+#include "/usr/include/serial.h" // Linux/Unix path.
+#include "..\projects\test.h" // Relative path.
+```
+No entanto, seria melhor evitar incluir informações de path ou drive, pois se seu programa for transferido para outro sistema, sua compilação poderá falhar.
+
+Depois de se familiarizar com o C++, você pode abrir os arquivos incluídos (por exemplo, iostream) e lê-los. Não confie neles apenas como fonte de algum conhecimento místico que esconde segredos invisíveis. São arquivos de texto que existem em seu computador. Encontre-os e veja seu conteúdo. É uma excelente fonte de conhecimento e informação extra.
 
 
+### A Função main()
