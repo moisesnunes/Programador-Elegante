@@ -65,3 +65,56 @@ Depois de se familiarizar com o C++, você pode abrir os arquivos incluídos (po
 
 
 ### A Função main()
+
+Cada programa em C++ deve conter uma função chamada *main()*. A palavra *main()* deve ser escrita em caracteres minúsculos. O código do programa, ou então o corpo da função, deve estar entre chaves ({}). Um statement é um comando que será executado quando o programa for executado. Os statements são normalmente escritas em linhas separadas e, quase sempre, cada statement termina com um ponto e vírgula. Embora o compilador não se importe com o layout do programa, a indentação e o espaçamento adequados tornam seu programa mais fácil de ler. Braces(chaves) são usadas para agrupar declarações e instruções em um bloco ou então uma instrução composta que o compilador trata como uma. Além das funções, usaremos chaves em instruções de controle e loops.
+
+O *main()*, como o próprio nome indica, é a função principal de qualquer programa. Falaremos sobre funções no Capítulo 11. Simplificando, uma função é uma série de declarações e comandos que foram agrupados e receberam um nome (por exemplo, main()). Uma função é chamada pelo seu nome para realizar uma tarefa específica e pode, opcionalmente, retornar um valor. A função *main()* é chamada automaticamente pelo sistema operacional quando o programa é executado. A execução do programa começa com a primeira instrução de *main()* e termina quando a última instrução de *main()* é executada, a menos que uma instrução de saída (por exemplo, __return__) seja chamada anteriormente. Obviamente, se ocorrer um erro grave durante a execução do programa, como uma divisão por 0, o programa terminará de forma anormal. A palavra-chave __int__ indica que *main()* deve retornar um integer ao sistema operacional quando terminar. Esse valor é retornado com a instrução __return__; o valor 0 indica terminação normal, enquanto valores diferentes de zero indicam algum tipo de falha. Esta declaração de *main()* é bastante comum. No entanto, você pode ver outras declarações, como:
+
+```c++
+void main
+```
+
+Como veremos no Capítulo 11, a palavra-chave __void__ indica que *main()* não retorna nenhum valor. Embora um compilador C++ possa aceitar essa declaração, ela não está em conformidade com o padrão porque *main()* deve retornar um valor. Outra declaração comum é:
+
+```c++
+int main(void)
+```
+
+A palavra __void__ afirma explicitamente que *main()* não aceita parâmetros; no entanto, seu uso é desnecessário porque os parênteses vazios () indicam o mesmo. No Capítulo 11, veremos outra declaração de *main()*, no qual *main()* recebe parâmetros. Observe que a instrução __return__ pode ser omitida. Se for omitida, o programa retornará automaticamente o valor 0. Embora o resultado seja o mesmo, minha preferência é usar a instrução __return__ para que seja claramente mostrada.
+
+_cout_ é um objeto que é declarado no namespace *std* e está associado à saída padrão predefinida (por exemplo, tela). *cout* sabe como exibir uma variedade de dados, incluindo strings, números e caracteres individuais. Em C++, uma série de caracteres entre "" é chamada de *string literal*. A notação ≪ indica que a string é enviada para *cout*. Como veremos no Capítulo 3, o caractere de nova linha *\n* move o cursor para o início da próxima linha. A principal razão pela qual eu adiciono *\n* no final da string é que mensagens como Pressione qualquer tecla para continuar, que podem ser exibidas por alguns compiladores após o término do programa, aparecem na próxima linha.
+
+### Estilos de Escrita
+
+Em relação à sintaxe do programa, as chaves {} não precisam ser colocadas em linhas separadas. Por exemplo, podemos adicionar o {next to *main()* e escrever *main()*{ or the} próximo à instrução __return__. Além disso, não é necessário recuar o código. Como você pode imaginar, há muitas maneiras de escrever o programa. Por exemplo, poderíamos escrever *main()*{ e colocar o código em uma única linha grande; no entanto, essa opção tornaria nosso programa ilegível. Uma linha pode conter várias instruções. Por exemplo, é legal escrever:
+
+```c++
+std::cout << "Hey Ho, Let's Go\n"; return 0;
+```
+
+Além das preferências que qualquer um possa ter, o que realmente importa é que um programa seja escrito de tal forma que seja fácil de ler não só por quem o escreveu, mas também por outros que vão lê-lo. Para melhor legibilidade, o estilo de escrita que prefiro é sempre colocar o {} em linhas separadas, cada instrução em uma linha e recuar o código.
+
+### Namespaces 
+
+Vamos fazer uma breve introdução aos namespaces. C++ permite o agrupamento de dados (por exemplo, classes, funções, variáveis, …) em um namespace comum. Assim, o namespace é uma parte do programa, no qual determinados nomes (por exemplo, variáveis) são declarados. Esses nomes não são conhecidos fora desta área. Por exemplo, todos os nomes da biblioteca padrão são definidos em um namespace chamado *std*. Como veremos no Capítulo 25, para acessar um elemento do namespace, devemos escrever o namespace seguido do operador de resolução de escopo __::__. Por exemplo, quando escrevemos *std::cout*, acessamos o objeto *cout* que está declarado no namespace *std*. Se quisermos disponibilizar todos os nomes do namespace *std*, escrevemos:
+
+```c++
+ using namespace std;
+```
+
+Agora, não precisamos adicionar o prefixo *std::* antes dos nomes que usamos, ou seja, podemos escrever:
+
+```c++
+cout << "Hey Ho, Let's Go\n";
+```
+
+Alternativamente, podemos disponibilizar apenas os nomes que usamos. Isso é obtido usando declarações __using__ correspondentes. Por exemplo:
+
+```c++
+ using std::cout;
+```
+
+Agora, não precisamos adicionar o prefixo *std::* quando usamos o *cout*, enquanto temos que adicioná-lo ao usar outros nomes de *std*. A convenção que costumo seguir é colocar declarações __using__ separadas para os nomes que uso ou, se esses nomes não aparecerem muitas vezes no programa, use o prefixo, como fiz no primeiro programa com *std::*. A razão pela qual eu prefiro usar declarações __using__ separadas em vez de todo o namespace é deixar claro quais elementos eu uso desse namespace. Ocasionalmente, se os nomes utilizados forem muitos, para maior facilidade de escrita e leitura do código, disponibilizarei todo o namespace. Se em alguns programas eu declaro o std inteiro, embora os nomes não sejam muitos, é para formatar as páginas deste livro para salvar algumas linhas. Falaremos mais sobre namespaces no Capítulo 25. Por enquanto, basta saber que com os namespaces C++ permite que espaços diferentes contenham elementos (por exemplo, variáveis) com os mesmos nomes, que podem ser usados ​​no programa sem criar um conflito entre eles.
+
+### Adcionando Comentários 
+
