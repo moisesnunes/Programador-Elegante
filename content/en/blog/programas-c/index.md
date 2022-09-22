@@ -50,9 +50,17 @@ int main(void){
   }
 }
 ```
-O resultado:
+#### Resultado:
 
 <img class="blog-print" src="1a100.png">
+
+#### Explicação:
+
+- Primeiro inicializamos __i__ como um integer.
+- Temos que __i__=1 e que ele é menor do que 100 então a condição se satifaz e o programa exibe o valor de __i__ que é 1.
+- Agora que __i__ é incrementado a '2' e novamente é menor do que 100 então a condição se satifaz e o programa exibe o valor de __i__ que é 2. 
+- O programa continua até que __i__ seja igual a 100 e sendo igual a 100 ele exibe o valor de __i__, então o valor é incrementado para 101 o que não satifaz a condição o que faz o programa finalizar o loop.
+- Como não existe condições fora do loop o programa termina.
 
 ___
 
@@ -67,9 +75,16 @@ int main(void){
   }
 }
 ```
-O resultado:
+#### Resultado:
 
 <img class="blog-print" src="a_z.png">
+
+#### Explicação:
+
+- Primeiro declaramos o integer que é __i__.
+- O programa é o mesmo do que exiber 65 até 90.
+- Mas como na tabela "ASCII" os valor de 65 é igual a 'A' e 90 igual a 'Z'.
+- Então ao invés de usarmos __%d__ usamos __c%__ que converte para valores ascii.
 
 ___
 
@@ -92,10 +107,17 @@ int main(void){
   printf("\n");
 }
 ```
-O resultado:
+#### Resultado:
 
 <img class="blog-print" src="par_impar.png">
 
+#### Explicação:
+
+- Primeiro declaramos __i__ como um integer.
+- Depois pegamos o input do usúario usando o comando __scanf__.
+- Como sabemos a operação módulo é usado para retornar o resto da divisão de dois valores 10%3=1, 12%2=0
+- Se você fizer o módulo como 2 então o restante deve ser '0' para números pares, e '1' para números ímpares.
+- Se dividirmos __i__ com '2' usando o mod operator então sob a condição o respectivo print será exibido.  
 ___
 
 ### Print todos os números ímpares até N

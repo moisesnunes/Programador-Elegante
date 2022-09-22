@@ -11,7 +11,7 @@ toc: true
 ---
 ____
 
-## HTML Básico ![](./html(2).png)
+## HTML Básico
 
 [1. Introdução ao __*HTML*__ → ]({{< relref "introducao.md" >}})
 
@@ -79,7 +79,7 @@ ___
 
 *______*
 
-## HTML Avançado ![](./html(2).png)
+## HTML Avançado
 
 ---
 

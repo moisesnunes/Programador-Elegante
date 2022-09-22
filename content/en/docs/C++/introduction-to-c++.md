@@ -116,5 +116,5 @@ Alternativamente, podemos disponibilizar apenas os nomes que usamos. Isso é obt
 
 Agora, não precisamos adicionar o prefixo *std::* quando usamos o *cout*, enquanto temos que adicioná-lo ao usar outros nomes de *std*. A convenção que costumo seguir é colocar declarações __using__ separadas para os nomes que uso ou, se esses nomes não aparecerem muitas vezes no programa, use o prefixo, como fiz no primeiro programa com *std::*. A razão pela qual eu prefiro usar declarações __using__ separadas em vez de todo o namespace é deixar claro quais elementos eu uso desse namespace. Ocasionalmente, se os nomes utilizados forem muitos, para maior facilidade de escrita e leitura do código, disponibilizarei todo o namespace. Se em alguns programas eu declaro o std inteiro, embora os nomes não sejam muitos, é para formatar as páginas deste livro para salvar algumas linhas. Falaremos mais sobre namespaces no Capítulo 25. Por enquanto, basta saber que com os namespaces C++ permite que espaços diferentes contenham elementos (por exemplo, variáveis) com os mesmos nomes, que podem ser usados ​​no programa sem criar um conflito entre eles.
 
-### Adcionando Comentários 
+### Adicionando Comentários 
 

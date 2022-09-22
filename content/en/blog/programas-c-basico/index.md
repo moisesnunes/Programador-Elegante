@@ -119,3 +119,17 @@ int main(void){
 O resultado:
 
 <img class="blog-print" src="poli.png">
+
+___ 
+
+### Soma de todos os inteiros divisiveis por 2 entre dois números
+
+```c
+#include<stdio.h>
+int main(void) {
+
+  int i, sum=0, num1, num2;
+  printf("Digite um numero: \n");
+  scanf("%d", &num1);
+}
+```
