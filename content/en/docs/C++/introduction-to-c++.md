@@ -15,11 +15,21 @@ toc: true
 
 ## Uma história básica
 
-C++ is one of the most popular languages and it has been used for the development of many widely used applications. Although it is one of the older programming languages, C++ is steadily ranked among the most widely used and most powerful programming languages. C++ is not specialized for a specific application field; on the contrary, it is used for an impressive range of applications. For example, C++ is widely used to develop gaming applications, web applications, operating systems, networking applications, financial, browsers, compilers, embedded systems, and many more. A great number of popular applications that we all use in our daily life are written in C++. Also, it is more effective than many other languages for developing applications across a different range of computing systems and environments, such as personal computers, workstations, tablets, and mobile phones.
+C++ é uma das linguagens mais populares e tem sido usada para o desenvolvimento de muitos aplicativos amplamente utilizados. Embora seja uma das linguagens de programação mais antigas, C++ é constantemente classificada entre as linguagens de programação mais usadas e poderosas. C++ não é especializado para um campo de aplicação específico; pelo contrário, é usado para uma gama impressionante de aplicações. Por exemplo, C++ é amplamente usado para desenvolver aplicativos de jogos, aplicativos da Web, sistemas operacionais, aplicativos de rede, financeiros, navegadores, compiladores, sistemas incorporados e muito mais. Um grande número de aplicativos populares que todos nós usamos em nossa vida diária são escritos em C++. Além disso, é mais eficaz do que muitas outras linguagens para desenvolver aplicativos em uma variedade diferente de sistemas e ambientes de computação, como computadores pessoais, estações de trabalho, tablets e telefones celulares.
 
-C++ originally derives from C, which was developed at Bell Labs in the early 1970s by Dennis Richie and others. The rapid expansion of the C language and its increased popularity led many companies to develop their own C compilers. However, due to the absence of an official standard, features that were not clearly described could be implemented in different ways. As a result, the same program could be compiled with one C compiler and not with another. In parallel, the C language continued to evolve with the addition of new features and the replacement or obsolescence of existing ones. The need for the standardization of C language became apparent. In 1983, the American National Standard Institute (ANSI) began the development of the C standard that was completed and formally approved, in 1989, as ANSI C or Standard C. The ANSI C standard also defines a library that every ANSI C implementation must support. C++ also supports that library.
+C++ originalmente deriva de C, que foi desenvolvido no Bell Labs no início dos anos 1970 por Dennis Richie e outros. A rápida expansão da linguagem C e sua crescente popularidade levaram muitas empresas a desenvolver seus próprios compiladores C. No entanto, devido à ausência de um padrão oficial, recursos que não foram claramente descritos podem ser implementados de diferentes maneiras. Como resultado, o mesmo programa pode ser compilado com um compilador C e não com outro. Paralelamente, a linguagem C continuou a evoluir com a adição de novos recursos e a substituição ou obsolescência dos existentes. A necessidade de padronização da linguagem C tornou-se evidente. Em 1983, o American National Standard Institute (ANSI) iniciou o desenvolvimento do padrão C que foi concluído e formalmente aprovado, em 1989, como ANSI C ou Standard C. O padrão ANSI C também define uma biblioteca que toda implementação ANSI C deve suportar . C++ também suporta essa biblioteca.
 
-The design and development of C++ began at Bell Labs in the early 1980s by Bjarne Stroustrup as an extension of the C language. Stroustrup had several reasons to base C++ on C, such as C’s brevity, high performance, portability, and widespread popularity. In fact, the name C++ comes from the C increment operator ++, which increments the value of a variable by one. According to Stroustrup, the name signifies the evolutionary nature of the changes from C.
+O design e desenvolvimento de C++ começou no Bell Labs no início dos anos 80 por Bjarne Stroustrup como uma extensão da linguagem C. Stroustrup teve vários motivos para basear C++ em C, como a brevidade do C, alto desempenho, portabilidade e ampla popularidade. Na verdade, o nome C++ vem do operador de incremento C++, que incrementa o valor de uma variável em um. De acordo com Stroustrup, o nome significa a natureza evolutiva das mudanças de C.
+
+Essencialmente, com algumas exceções, C++ é um superconjunto de C. C é uma linguagem relativamente simples. Seus principais componentes são fluxos de controle, iterações, arrays, ponteiros, funções e estruturas. Estas são as ferramentas básicas disponíveis para um programador C escrever programas. Em C++, as ferramentas são muito mais. No nível conceitual, os recursos mais importantes adicionados são ocultação de dados, polimorfismo, herança, suporte a programação genérica e a biblioteca padrão que fornece um grande número de ferramentas ao desenvolvedor. No nível de design, C++ suporta programação procedural baseada no uso de fluxos de controle, instruções de iteração e chamadas para funções para executar um conjunto de ações quando chamadas, programação abstrata baseada no design de tipos que oculta detalhes de implementação, programação orientada a objetos baseada no desenho de hierarquias de classes e objetos que representam as entidades com as quais o programa lida, e programação genérica baseada no uso de templates e algoritmos genéricos que permitem ao programador escrever código independente de tipo. A capacidade de combinar todas essas técnicas de design de programação ao escrever programas destaca a flexibilidade e a força do C++. Sim, eu diria serviços de programação suficientes para uma única linguagem.
+
+Além disso, um dos principais objetivos do C++ é continuar próximo ao hardware como o C, fornecendo uso eficiente de memória e alto desempenho de funções de baixo nível, além de permitir que o desenvolvedor defina tipos próprios com o mesmo suporte de sintaxe, faixa de aplicação e desempenho com os tipos básicos. Essa combinação permitiu a disseminação do C++.
+
+O C++ começou a se difundir e, como no caso do C, foi necessária a publicação de um padrão para descrever suas características. O C++ foi inicialmente padronizado em 1998 como ISO/IEC 14882:1998, que foi então alterado pelos padrões C++03, C++11, C++14 e C++17. O C++03 foi principalmente uma revisão técnica do C++98, visando corrigir bugs e reduzir ambiguidades. Como o C++03 não adicionou novos recursos, o C++98 é frequentemente chamado de C++98/C++03. As próximas versões adicionam novos recursos ao idioma. O C++ ainda continua a evoluir e, no momento da redação deste artigo, o C++20 está em andamento.
+
+Este livro cobre completamente o C++98 e apresenta vários recursos do C++11/C++14/C++17. Quaisquer referências a C++11/C++14/C++17 são claramente identificadas. Eu poderia descrever a linguagem de forma uniforme sem nenhuma referência especial aos padrões, apenas preferi a distinção para leitores que possam ter alguma experiência com C++98 e gostariam de ver as mudanças separadamente, bem como por motivos históricos, para mostrar a evolução da linguagem e as necessidades que um novo recurso cobre. Além disso, como você pode encontrar um código que usa recursos mais antigos que podem ter sido removidos até agora, é útil saber como eles funcionam para poder ler esse código. Este livro pressupõe que você não tenha conhecimento prévio de C. Qualquer referência a C refere-se a ANSI C e não a versões posteriores. Caso você conheça C, é uma boa oportunidade para refrescar sua memória e testar novamente suas habilidades.
+
+Observe que este livro não pretende ser uma referência C++ completa; uma cobertura detalhada está além de seu escopo. O objetivo principal é apresentar os conceitos fundamentais da linguagem C++ e mostrar como aplicá-los em seus programas através de muitos exemplos e exercícios de programação.
 
 ## Nosso primeiro programa em C++
 
@@ -54,7 +64,7 @@ Quando você se familiarizar com o C++, você pode editar seus próprios arquivo
 
 Quando o programa é compilado, o compilador procura os arquivos incluídos. As regras de busca dependem da implementação. Normalmente, se o nome do arquivo estiver entre <>, o compilador pesquisa em diretórios predefinidos que contêm os cabeçalhos da biblioteca padrão. Se estiver entre aspas duplas (""), o compilador geralmente começa com o diretório que contém o arquivo de origem e, em seguida, pesquisa os diretórios predefinidos. Se o arquivo não for encontrado, o compilador produzirá uma mensagem de erro e a compilação falhará. O nome do arquivo pode incluir informações relativas ou completas do caminho. Por exemplo:
 
-```c++
+```
 #include "d:\projects\serial.h" // DOS/Windows path.
 #include "/usr/include/serial.h" // Linux/Unix path.
 #include "..\projects\test.h" // Relative path.
@@ -118,3 +128,76 @@ Agora, não precisamos adicionar o prefixo *std::* quando usamos o *cout*, enqua
 
 ### Adicionando Comentários 
 
+Adicionar comentários melhora a legibilidade do programa e facilita a compreensão de como ele funciona. Um comentário começa com // e termina no final da linha. O compilador ignora os comentários, portanto os comentários não aumentam o tamanho do arquivo executável, não afetam a operação do programa, nem aumentam o tempo de execução. Por exemplo, dois comentários são adicionados:
+
+```c++
+// O programa exibe uma mensagem na tela.
+#include <iostream>
+using std::cout; // Vamos usar o cout object.
+
+int main()
+{
+  cout << "Hey Ho, Let's Go\n";
+  return 0;
+}
+```
+
+C++ também suporta o uso de / * * / para inserir comentários. O compilador ignora qualquer coisa incluída entre o / * * /. Se um comentário se estender por mais de uma linha, podemos usar // no início de cada linha ou / * * /. É uma questão de preferência pessoal. Minha preferência é usar // para comentários de uma linha, enquanto usar / * * / para várias linhas. Por exemplo:
+
+```s
+/* O propósito do primeiro programa é exibir uma na tela. */
+```
+Comentários não corretos não são permitidos, o código a seguir é ilegal e o compilador gerará uma mensagem de erro:
+
+```s
+/*
+/* Outro comentário. */
+*/
+```
+Adicionar comentários é uma obrigação ao escrever programas. Um programa explicativo economiza tempo e esforço quando você precisa modificá-lo e o tempo de outras pessoas que podem precisar entender e evoluir seu programa. A pessoa que provavelmente se beneficiará dos comentários é você, quando voltar a esse código em algum momento no futuro e não se lembrar exatamente por que escreveu o código da maneira que fez. Na verdade, já me arrependi muitas vezes no passado quando em partes não óbvias dos meus programas eu não adicionava comentários, porque achava que sempre entenderia o que estava escrevendo. Eu estava errado e paguei o preço com o tempo que perdi para entender o que fiz.
+
+Por outro lado, li comentários que tornaram mais difícil para mim entender as intenções do programador. Melhor não coloca-lás. Além dos pontos complicados do programa, sugiro que você adicione comentários para descrever a finalidade de cada arquivo, bem como a finalidade de funções, entidades (por exemplo, classes) ou variáveis importantes (por exemplo, global). E, ao adicionar um comentário, não se apresse em anotá-lo para continuar escrevendo o código. É muito importante que o comentário seja substancial, explicativo e compreensível.
+
+Vamos fazer um exercício. Com base no que você aprendeu até agora, você pode me dizer o que o programa a seguir produz? Leia o programa com atenção e não se apresse para ver a resposta.
+
+```s
+#include <iostream> // Example 1.1
+using std::cout;
+int main()
+{
+//   cout << "That is ";
+     cout << "the first"; /* A program with multiple outputs 
+     cout << " trap"; /* That’s the last one. */
+return 0;
+}
+```
+Você notou o // e respondeu a primeira *the first trap*? Sim, mas você não percebeu que o comentário que começa com /* na segunda linha termina no final da terceira linha. Portanto, o programa gera: *the first*.
+
+```c++
+#include <iostream> // Example 1.1
+using std::cout;
+int main()
+{
+//   cout << "That is ";
+     cout << "the first"; /* A program with multiple outputs 
+     cout << " trap"; /* That’s the last one. */
+return 0;
+}
+```
+![resultado](./the-first.png)
+
+___
+
+{{< alert icon="⚠️" text="Cuidado ao usar / * * / para adcionar comentários, o compilador vai ignorar tudo que estiver entre eles."/>}}
+
+___
+
+### Lendo Este Tutorial
+
+Quanto às expressões linguísticas deste livro, eu diria que não há nada de especial. Se algum código estiver marcado como *program behaviour is undefined*, isso significa que o programa pode continuar a ser executado, travar ou produzir resultados inesperados. Todos os cenários são possíveis. Qual é o cenário mais provável? De acordo com a Lei de Murphy, trabalhar normalmente durante a fase de desenvolvimento e travar ao realizar uma demonstração pública. Além disso, mesmo que seu programa funcione normalmente com um compilador, ele pode falhar com algum outro ou com uma próxima versão do mesmo compilador. Portanto, evite o que pode causar um *undefined behaviour*.
+
+Se algum código estiver marcado como *the result depends on the implementation* ou *it is platform dependent*, significa que se você compilar seu programa com outro compilador ou transferi-lo para outro sistema e compilar, esse código pode produzir resultados diferentes. Como você pode imaginar, depurar um programa que roda normalmente em um sistema e não em outro é um processo muito desagradável. Portanto, se você deseja que seu programa seja portátil, não escreva código que dependa do sistema em que você trabalha.
+
+Na minha experiência, o primeiro passo para aprender uma linguagem de programação é através de exemplos de práticos. Você encontrará muitos exemplos ao longo deste livro. Alguns são apenas code snippets, enquanto outros são programas completos que ajudam a entender o material. Depois de entender (e não apenas ler) um tópico, o próximo passo é escrever o código para testar seu conhecimento. Você não pode aprender uma linguagem de programação apenas lendo um livro; você deve escrever o código. Por essa razão, cada capítulo oferece muitos exercícios de programação. Um programa pode ser escrito de várias maneiras. Ao ler um exercício, meu conselho é esconder a resposta e escrever sua própria versão. Em seguida, compare as soluções. Preste atenção extra a todas as perguntas do tipo “Qual é a saída do programa a seguir?” Não se apresse para ver a resposta; escondê-lo e dar-lhe algum tempo. Cada capítulo termina com uma série de exercícios não resolvidos para mais prática. Sempre experimente-os para testar suas habilidades e compreensão do que você aprendeu, antes de continuar para o próximo capítulo. Lembre-se, para aprender qualquer linguagem de programação, você deve escrever seus próprios programas e experimentá-los; mãos à obra, essa é a única maneira.
+
+C++ *é uma linguagem poderosa com muitos recursos, regras e conceitos. Portanto, não fique desapontado se algum texto ou exemplos neste livro dificultarem sua compreensão. É normal se sentir assim. A melhor maneira de superar essas dificuldades é escrever programas pequenos e simples e experimentá-los para que você gradualmente se familiarize com os recursos da linguagem e como eles funcionam.*
