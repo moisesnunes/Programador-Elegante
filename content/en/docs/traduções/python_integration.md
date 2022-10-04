@@ -47,27 +47,19 @@ ___
 
 ### Métodos de Integração Numérica
 
-Nosso foco aqui será em calcular integrais definidas na forma $\ I(f)= \int_{a}^{b} f(x) dx\$, com os limites de integração dados em _a_ e _b_. O intervalo [_a_,_b_] pode ser finito; semi-infinito (em que ambos _a_ = - $\{\infty}\$ ou b = $\{\infty}\$ ); ou infinito (em que ambos _a_ = - $\{\infty}\$ ou b = $\{\infty}\$ ).
-A integral $\ I(f)\$ pode ser interpretada como a área entre a curva do integrando $\ f(x) \$ e o eixo _x_, como ilustrado na figura a baixo.
+Nosso foco aqui será em calcular integrais definidas na forma $I(f)= \int_{a}^{b} f(x) dx$, com os limites de integração dados em _a_ e _b_. O intervalo [_a_,_b_] pode ser finito; semi-infinito (em que ambos _a_ = - $\{\infty}\$ ou b = $\{\infty}\$ ); ou infinito (em que ambos _a_ = - $\{\infty}\$ ou b = $\{\infty}\$ ).
+A integral $\ I(f)\$ pode ser interpretada como a área entre a curva do integrando $f(x)$ e o eixo _x_, como ilustrado na figura a baixo.
 
 
-_Interpretação de uma integral entre a área da curva do integrando e o eixo x. A área é tida como positiva onde $\ f(x) > 0 \$ (verde) e negativa onde $\ f(x) < 0 \$ (vermelha)._  
+_Interpretação de uma integral entre a área da curva do integrando e o eixo x. A área é tida como positiva onde $f(x) > 0$ (verde) e negativa onde $ f(x) < 0$ (vermelha)._  
 
-Uma estratégia geral para avaliar numericamente uma integral $\ I (f) \$ é esreve-lá como uma soma discreta que aproxima-se do valor da integral: 
+Uma estratégia geral para avaliar numericamente uma integral $I (f)$ é esreve-lá como uma soma discreta que aproxima-se do valor da integral: 
 
-$$\ I (f) = \sum_{i=1}^{n} \ w_i \ f(x_i) + r_n \$$
+$$\begin{equation*} I (f) = \sum_{i=1}^{n} \ w_i \ f(x_i) + r_n \end{equation*}$$
 
-Temos que $\ w_i \$ são os valores das _n_ avaliações de $\ f(x) \$
-nos pontos $\ x_i \in [a,b] \$, e que, $\ r_n \$ é o resíduo devido à aproximação. Assumimos na prática que $\ r_n \$ é pequeno, e pode ser ignorado; mas, é importante ter uma estimativa de $\ r_n \$ para sabermos com precisão o quanto a integral está aproximada. Esta formula de adição para $\ I (f) \$ é conhecida como um ponto-_n_ na _regra da quadratura_; 
+Temos que $w_i$ são os valores das _n_ avaliações de $f(x)$
+nos pontos $x_i \in [a,b]$, e que, $r_n$ é o resíduo devido à aproximação. Assumimos na prática que $r_n$ é pequeno, e pode ser ignorado; mas, é importante ter uma estimativa de $\ r_n \$ para sabermos com precisão o quanto a integral está aproximada. Esta formula de adição para $I (f)$ é conhecida como um ponto-_n_ na _regra da quadratura_; 
 
-The average energy of the neutrinos $\langle E \rangle$ emitted during a supernova explosion is of the order of 10MeV, and the neutrino luminosity at the early epoch of the explosion is approximately $10^{52}\mathrm{ergs\cdot s^{-1}}$.
-Therefore, the number density of the neutrinos at the radius $R$ is
-
-$$
-\begin{equation*}
-   n \sim  10^{18} \mathrm{cm^{-3}} \left(\frac{100\mathrm{km}}{R}\right)^2 \left(\frac{10\mathrm{MeV}}{\langle E \rangle}\right).
-\end{equation*}
-$$
 
 
 
